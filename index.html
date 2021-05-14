@@ -5,8 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="gallery photo, jquery plugin, jquery popup, lightbox, popup image, gambar popup, jquery, css3" />
     <title>Raditya Dika</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+
+    <script type="text/javascript">
+        $(function () {
+            $('#gallery a').lightBox();
+        });
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () { var header = document.querySelector("header"); header.classList.toggle("sticky", window.scrollY > 0) })
+    </script>
     <style>
         .bungkus {
             background-color: rgba(80, 74, 74, 0.4);
@@ -42,18 +56,6 @@
             padding: 20px 55px;
             font-size: 30px;
         }
-
-        .hoby img {
-            height: 170px;
-            width: 300px;
-        }
-
-        .hoby:hover {
-            -webkit-transform: scale(1.08);
-            transform: scale(1.08);
-            /* background-color: rgba(187, 187, 189, 0.6);
-            color: black; */
-        }
     </style>
 </head>
 
@@ -61,12 +63,12 @@
     <!--header-->
     <header>
         <div class="header">
-                <ul>
-                    <li><a href="#biodata">BIODATA</a></li>
-                    <li style="word-spacing: 1px;"><a href="#pengalaman">PENGALAMAN</a></li>
-                    <li><a href="#galeri">GALERI</a></li>
-                    <li><a href="#kontak">KONTAK</a></li>
-                </ul>
+            <ul>
+                <li><a href="#biodata">BIODATA</a></li>
+                <li style="word-spacing: 1px;"><a href="#pengalaman">PENGALAMAN</a></li>
+                <li><a href="#gallery">GALERI</a></li>
+                <li><a href="#kontak">KONTAK</a></li>
+            </ul>
         </div>
     </header>
 
@@ -76,149 +78,156 @@
             <div class="quotes">
                 <h1>" Kejarlah kesuksesanmu hingga mantanmu ngajak balikan " <br> -Raditya Dika-</h1>
             </div>
-        </div>
-        </section>
+    </div>
+    </section>
     </div>
 
     <!--biodata-->
-    <div class ="sampul">
-        <div id="biodata" class="content"> 
+    <div class="sampul">
+        <div id="biodata" class="content">
             <div class="foto"><img src="image/raditya dika.png" alt="Raditya Dika"></div>
             <div class="nama">
                 <h1>RADITYA DIKA</h1>
                 <div class="paragraf">
-                    <p>Dika Angkasaputra Moerwani Nasution atau yang lebih dikenal dengan Raditya Dika yang lahir di Jakarta, 
-                        28 Agustus 1984. Raditya Dika adalah seorang penulis, komedian, sutradara, aktor dan juga youtuber. 
-                        Dikalangan anak muda, Raditya Dika dikenal sebagai Komika (Stand Up Comedy) yang terkenal dengan 
-                        lawakan-lawakannya yang up to date. Selain menjadi Komika, Raditya Dika juga sebagai penulis buku, 
-                        dimana buku pertamanya yang mengangkat dirinya yang berjudul "Kambing Jantan : Sebuah Catatan Harian 
-                        Pelajar Bodoh (2005)" masuk ke kategori best seller. Hingga pada saat ini jumlah buku yang sudah ditulis 
-                        oleh Raditya Dika adalah sebanyak 8 Novel. Selain sebagai penulis Raditya Dika juga mensutradarai dan 
-                        memerakan film-film layar lebar yang selalu booming, hal ini dikarenakan Raditya Dika tidak pernah main-main 
+                    <p>Dika Angkasaputra Moerwani Nasution atau yang lebih dikenal dengan Raditya Dika yang lahir di
+                        Jakarta,
+                        28 Agustus 1984. Raditya Dika adalah seorang penulis, komedian, sutradara, aktor dan juga
+                        youtuber.
+                        Dikalangan anak muda, Raditya Dika dikenal sebagai Komika (Stand Up Comedy) yang terkenal dengan
+                        lawakan-lawakannya yang up to date. Selain menjadi Komika, Raditya Dika juga sebagai penulis
+                        buku,
+                        dimana buku pertamanya yang mengangkat dirinya yang berjudul "Kambing Jantan : Sebuah Catatan
+                        Harian
+                        Pelajar Bodoh (2005)" masuk ke kategori best seller. Hingga pada saat ini jumlah buku yang sudah
+                        ditulis
+                        oleh Raditya Dika adalah sebanyak 8 Novel. Selain sebagai penulis Raditya Dika juga
+                        mensutradarai dan
+                        memerakan film-film layar lebar yang selalu booming, hal ini dikarenakan Raditya Dika tidak
+                        pernah main-main
                         dalam meriliskan karya-karyanya.
                     </p>
                 </div>
             </div>
-            
+
         </div>
     </div>
-<br><br><br><br><br><br><br>
-</b></b>
-    <div>
-        <section id="pengalaman" class="banner2">
-            <div>
-                <h1 style="text-align: center; font-size: 30px;">TENTANG SAYA</h1>
-                <div class="bungkus">
-                    <table>
-                        <tr>
-                            <td rowspan="8" width="100px"> <img src="image/wiweka.jpg" width="200px"
-                                    style="display: block;border-radius: 5%;border-color:white;margin-right:30px; border: 20px;">
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td><b>Nama Lengkap</b></td>
-                            <td>:</td>
-                            <td>Komang Wiweka Premana</td>
-                        </tr>
-                        <tr>
-                            <td><b>Tempat, Tanggal Lahir</b></td>
-                            <td>:</td>
-                            <td>Denpasar, 2 Oktober 2001</td>
-                        </tr>
-                        <tr>
-                            <td><b>Pendidikan Sekarang</b></td>
-                            <td>:</td>
-                            <td>Universitas Pendidikan Ganesha</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jenis Kelamin</b></td>
-                            <td>:</td>
-                            <td>Laki-laki</td>
-                        </tr>
-                        <tr>
-                            <td><b>Alamat</b></td>
-                            <td>:</td>
-                            <td>Desa Ungasan, Kec Kuta Selatan, Kab Badung</td>
-                        </tr>
-                        <tr>
-                            <td><b>Email</b></td>
-                            <td>:</td>
-                            <td>wiwekapremana@gmail.com</td>
-                        </tr>
-                    </table>
-                </div>
-        </section>
-        <section>
-    </div>
-    <div>
-        <div>
-
     <section class="banner2">
-        <div class="pengalaman">
+        <div id="pengalaman" class="pengalaman">
             <div>
                 <h1>PENGALAMAN MENULIS</h1>
 
                 <div class="box">
                     <div class="col-4">
-                        <div class="logo"><img src="image/novel_Kambing_Jantan.jpg" alt="Sekolah Dasar" width="160px">
+                        <div class="logo"><img src="image/novel_Kambing_Jantan.jpg" alt="novel_Kambing_Jantanwidth="
+                                160px">
                             <h3>Novel Kambing Jantan</h3>
                             <h4>2005</h4>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="logo"><img src="image/novel_Cinta_Brontosaurus.jpg" alt="SMP" width="160px">
+                        <div class="logo"><img src="image/novel_Cinta_Brontosaurus.jpg" alt="novel_Cinta_Brontosaurus"
+                                width="160px">
                             <h3>Novel Cinta Brontosaurus</h3>
                             <h4>2006</h4>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="logo"><img src="image/novel_Radikus_Makankakus.jpg" alt="SMA" width="160px">
+                        <div class="logo"><img src="image/novel_Radikus_Makankakus.jpg" alt="novel_Radikus_Makankakus"
+                                width="160px">
                             <h3>Novel Radikus Makankakus</h3>
                             <h4>2007</h4>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="logo"><img src="image/novel_Babi_Ngesot.jpeg" alt="SMA" width="160px">
+                        <div class="logo"><img src="image/novel_Babi_Ngesot.jpeg" alt="novel_Babi_Ngesot" width="160px">
                             <h3>Novel Babi Ngesot</h3>
                             <br>
                             <h4>2008</h4>
                         </div>
                     </div>
                     <div class="row-4">
-                        <div class="logo"><img src="image/novel_Ubur-ubur-Lembur.jpg" alt="SMA" width="160px">
+                        <div class="logo"><img src="image/novel_Ubur-ubur-Lembur.jpg" alt="novel_Ubur-ubur-Lembur"
+                                width="160px">
                             <h3>Novel Ubur-Ubur Lembur</h3>
                             <h4>2018</h4>
                         </div>
                     </div>
                     <div class="row-4">
-                        <div class="logo"><img src="image/novel_koala_kumal.jpg" alt="SMA" width="160px">
+                        <div class="logo"><img src="image/novel_koala_kumal.jpg" alt="novel_koala_kumal" width="160px">
                             <h3>Novel Koala Kumal</h3>
                             <h4>2015</h4>
                         </div>
                     </div>
                     <div class="row-4">
-                        <div class="logo"><img src="image/novel_manusia_salmon.jpg" alt="SMA" width="160px">
+                        <div class="logo"><img src="image/novel_manusia_salmon.jpg" alt="novel_manusia_salmon"
+                                width="160px">
                             <h3>Novel Setengah Salmon</h3>
                             <h4>2011</h4>
                         </div>
                     </div>
                     <div class="row-4">
-                        <div class="logo"><img src="image/novel_Marmut_Merah_Jambu.jpg" alt="SMA" width="160px">
+                        <div class="logo"><img src="image/novel_Marmut_Merah_Jambu.jpg" alt="novel_Marmut_Merah_Jambu"
+                                width="160px">
                             <h3>Novel Marmut Merah Jambu</h3>
                             <h4>2010</h4>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
-    </section>  
+    </section>
 
     </div>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () { var header = document.querySelector("header"); header.classList.toggle("sticky", window.scrollY > 0) })
-    </script>
+    <section class="sampul">
+
+        <div  id="gallery"  >
+            <ul>
+                <li>
+                    <a href="image/raditya dika.png" title="Satu">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+                <li>
+                    <a href="image/1.jpg" title="Dua">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+                <li>
+                    <a href="image/1.jpg" title="Tiga">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+                <li>
+                    <a href="image/1.jpg" title="Empat">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+                <li>
+                    <a href="image/1.jpg" title="Lima">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+                <li>
+                    <a href="image/1.jpg" title="Lima">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+                <li>
+                    <a href="image/1.jpg" title="Lima">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+                <li>
+                    <a href="image/raditya dika.png" title="Lima">
+                        <img src="image/1.jpg" alt="tutorial web design" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
     <footer>
         <div class="sosmed">
             <div align="center">

@@ -35,7 +35,7 @@ header.sticky ul li a{
     color: black;
 }
 .sampul{
-    height: 100vh;
+    height: 110vh;
     background: rgb(2, 192, 169);
     background: linear-gradient(130deg, rgba(2,192,169,1) 10%, rgba(33,137,166,1)100%);
     background-size: cover;
@@ -47,9 +47,7 @@ header.sticky ul li a{
     background-size: cover;
     display: flex;
 }
-.quotes{
-    z-index: 1;
-}  
+
 .quotes h1{
     font-size: 30px;
     color:rgb(2, 192, 169); 
@@ -180,4 +178,16 @@ footer {
     float: right;
     -webkit-transition: 0.9s ease;
     transition: 1.5s ease;
+}
+
+#gallery{padding:10px}
+#gallery ul{
+	list-style-type:none;
+}
+#gallery ul li{
+	display:inline-block;
+	padding:5px;
+}
+#gallery ul li img:hover{
+	opacity:0.8;
 }
