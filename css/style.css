@@ -106,7 +106,7 @@ header ul li a:hover {
 }
 .banner2 {
     margin-top: 25px;
-    height: 80vh;
+    height: 120vh;
     background-image: url('../image/beranda.gif');
     background-size: cover;
     position: relative;
@@ -170,140 +170,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-.pricing-table{
-    background: #f1f1f1;
-    flex: 1;
-    margin: 10px;
-    text-transform: uppercase;
-}
 
-.pricing-header{
-    background: black;
-    color: #fff;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.price{
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-}
-
-.title{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,50%);
-    width: 80%;
-    max-width: 360px;
+.box .row-4 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* border: 1px solid; */
     text-align: center;
-    padding: 8px 0;
-}
-
-.pricing-list{
-    padding: 10px 20px;
-}
-
-.pricing-list li{
-    margin: 8px 0;
-    font-size: 14px;
-    color: #344;
-    text-align: center;
-}
-
-.border {
-    width: 80px;
-    height: 1px;
-    background: #add;
-    margin: auto;
-}
-
-.pricing-table a{
-    display: block;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
-    transition: .2s linear;
-}
-
-.table1 .pricing-header{
-    background: rgb(2,192,169);
-    background: linear-gradient(130deg, rgba(2, 192,169,1) 10%,
-    rgba(33, 137, 166,1) 100%);
-
-}
-.table2 .pricing-header{
-    background: rgb(2,192,169);
-    background: linear-gradient(130deg, rgba(2, 192,169,1) 10%,
-    rgba(33, 137, 166,1) 100%);
-
-}
-.table3 .pricing-header{
-    background: rgb(2,192,169);
-    background: linear-gradient(130deg, rgba(2, 192,169,1) 10%,
-    rgba(33, 137, 166,1) 100%);
-
-}
-.table4 .pricing-header{
-    background: rgb(2,192,169);
-    background: linear-gradient(130deg, rgba(2, 192,169,1) 10%,
-    rgba(33, 137, 166,1) 100%);
-
-}
-
-.table1 .title{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-.table2 .title{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-.table3 .title{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-.table4 .title{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-
-.table1 a{
-    color: blue;
-    opacity: 50%;
-}
-.table2 a{
-    color: blue;
-    opacity: 50%;
-}
-.table3 a{
-    color: blue;
-    opacity: 50%;
-}
-.table4 a{
-    color: blue;
-    opacity: 50%;
-}
-
-.table1 a:hover{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-
-.table2 a:hover{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-
-.table3 a:hover{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-.table4 a:hover{
-    background-image: linear-gradient(125deg, #9b9b9b, #27ae60);
-}
-
-@media screen and (max-width: 780px){
-    .pricing-table{
-        flex: 100px;
-    }
+    float: right;
+    -webkit-transition: 0.9s ease;
+    transition: 1.5s ease;
 }
