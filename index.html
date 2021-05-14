@@ -4,20 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="keywords" content="gallery photo, jquery plugin, jquery popup, lightbox, popup image, gambar popup, jquery, css3" />
+    <meta name="keywords"
+        content="gallery photo, jquery plugin, jquery popup, lightbox, popup image, gambar popup, jquery, css3" />
     <title>Raditya Dika</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
-
-    <script type="text/javascript">
-        $(function () {
-            $('#gallery a').lightBox();
-        });
-    </script>
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script type="text/javascript">
         window.addEventListener("scroll", function () { var header = document.querySelector("header"); header.classList.toggle("sticky", window.scrollY > 0) })
     </script>
@@ -66,7 +59,7 @@
             <ul>
                 <li><a href="#biodata">BIODATA</a></li>
                 <li style="word-spacing: 1px;"><a href="#pengalaman">PENGALAMAN</a></li>
-                <li><a href="#gallery">GALERI</a></li>
+                <li><a href="#galeri">GALERI</a></li>
                 <li><a href="#kontak">KONTAK</a></li>
             </ul>
         </div>
@@ -179,53 +172,44 @@
     </section>
 
     </div>
-    <section class="sampul">
-
-        <div  id="gallery"  >
-            <ul>
-                <li>
-                    <a href="image/raditya dika.png" title="Satu">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-                <li>
-                    <a href="image/1.jpg" title="Dua">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-                <li>
-                    <a href="image/1.jpg" title="Tiga">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-                <li>
-                    <a href="image/1.jpg" title="Empat">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-                <li>
-                    <a href="image/1.jpg" title="Lima">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-                <li>
-                    <a href="image/1.jpg" title="Lima">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-                <li>
-                    <a href="image/1.jpg" title="Lima">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-                <li>
-                    <a href="image/raditya dika.png" title="Lima">
-                        <img src="image/1.jpg" alt="tutorial web design" />
-                    </a>
-                </li>
-            </ul>
+    <section class="sampul" id="galeri">
+        <h3>Video</h3>
+        <div>
+            <a class="img-galeri" href="https://www.youtube.com/watch?v=jEhAKDCqFqI" data-lightbox="example-1"><img
+                    class="img-galeri" src="https://i.ytimg.com/vi/jEhAKDCqFqI/maxresdefault.jpg" alt="image-1" /></a>
+            <a class="img-galeri" href="https://www.youtube.com/watch?v=jEhAKDCqFqI" data-lightbox="example-1"><img
+                    class="img-galeri" src="https://i.ytimg.com/vi/jEhAKDCqFqI/maxresdefault.jpg" alt="image-1" /></a>
         </div>
 
+        <hr />
+
+        <h3>Gambar</h3>
+        <div>
+            <a class="img-galeri-link"
+                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                    alt="" /></a>
+            <a class="img-galeri-link"
+                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                    alt="" /></a>
+            <a class="img-galeri-link"
+                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                    alt="" /></a>
+            <a class="img-galeri-link"
+                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                    alt="" /></a>
+        </div>
     </section>
 
     <footer>

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 a {
     color: inherit;
@@ -180,14 +181,6 @@ footer {
     transition: 1.5s ease;
 }
 
-#gallery{padding:10px}
-#gallery ul{
-	list-style-type:none;
-}
-#gallery ul li{
-	display:inline-block;
-	padding:5px;
-}
-#gallery ul li img:hover{
-	opacity:0.8;
+.img-galeri {
+    height: 10vh;
 }
