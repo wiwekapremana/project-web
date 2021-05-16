@@ -9,45 +9,52 @@
         content="gallery photo, jquery plugin, jquery popup, lightbox, popup image, gambar popup, jquery, css3" />
     <title>Raditya Dika</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/45b14ba51c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <script src="js/lightbox-plus-jquery.min.js"></script>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () { var header = document.querySelector("header"); header.classList.toggle("sticky", window.scrollY > 0) })
-    </script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-        .bungkus {
-            background-color: rgba(80, 74, 74, 0.4);
-            width: 1000px;
-            color: rgb(216, 171, 171);
-            margin: 20px auto;
-            padding: 30px;
-            display: inline-block;
-            border-radius: 4%;
+        .custom-shape-divider-bottom-1621152132 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
         }
 
-        .bungkus:hover {
-            -webkit-transform: scale(1.08);
-            transform: scale(1.08);
-            background-color: rgba(240, 233, 233, 0.4);
-            color: black;
+        .custom-shape-divider-bottom-1621152132 svg {
+            position: relative;
+            display: block;
+            width: calc(115% + 1.3px);
+            height: 210px;
         }
 
-        .logo img {
-            height: 180px;
+        .custom-shape-divider-bottom-1621152132 .shape-fill {
+            fill: #FFFFFF;
         }
 
-        .logo:hover {
-            -webkit-transform: scale(1.08);
-            transform: scale(1.08);
+        .custom-shape-divider-top-1621189909 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
         }
 
-        .banner2 h1 {
-            -webkit-transition: 1.5s ease;
-            transition: 1.5s ease;
-            text-align: center;
-            color: #fff;
-            padding: 20px 55px;
-            font-size: 30px;
+        .custom-shape-divider-top-1621189909 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 121px;
+        }
+
+        .custom-shape-divider-top-1621189909 .shape-fill {
+            fill: #FFFFFF;
         }
     </style>
 </head>
@@ -55,32 +62,51 @@
 <body>
     <!--header-->
     <header>
-        <div class="header">
+        <div>
             <ul>
                 <li><a href="#biodata">BIODATA</a></li>
-                <li style="word-spacing: 1px;"><a href="#pengalaman">PENGALAMAN</a></li>
+                <li><a href="#pengalaman">PENGALAMAN</a></li>
                 <li><a href="#galeri">GALERI</a></li>
+                <li><a href="#video">VIDEO</a></li>
                 <li><a href="#kontak">KONTAK</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- home -->
-    <div>
-        <section class="sampul2">
-            <div class="quotes">
-                <h1>" Kejarlah kesuksesanmu hingga mantanmu ngajak balikan " <br> -Raditya Dika-</h1>
+    <!-- halaman awal -->
+    <section class="sampulawal">
+        <div class="custom-shape-divider-bottom-1621152132">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <img src="image/raditya dika.png" alt="Raditya Dika">
+                </div>
+                <div class="col-4" style="width: 50%; margin-top: 10%;">
+                    <h1 style="color: white; font-style: italic; font-weight: bold;">"Kejarlah kesuksesan hingga
+                        mantanmu ngajak balikan"</h1>
+                    <h3 style="color: white;">-Raditya Dika-</h3>
+                </div>
             </div>
-    </div>
+        </div>
+
     </section>
-    </div>
 
     <!--biodata-->
-    <div class="sampul">
-        <div id="biodata" class="content">
-            <div class="foto"><img src="image/raditya dika.png" alt="Raditya Dika"></div>
+    <section class="sampul">
+        </div>
+        <div id="biodata" class="content" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="900">
             <div class="nama">
-                <h1>RADITYA DIKA</h1>
+                <center>
+                    <h1>RADITYA DIKA</h1>
+                </center>
                 <div class="paragraf">
                     <p>Dika Angkasaputra Moerwani Nasution atau yang lebih dikenal dengan Raditya Dika yang lahir di
                         Jakarta,
@@ -101,132 +127,415 @@
                     </p>
                 </div>
             </div>
-
+            <div class="fotobio"> <img src="image/raditya dika2.png" alt="Raditya Dika" width="500px"
+                    data-aos="fade-left"></div>
         </div>
-    </div>
-    <section class="banner2">
-        <div id="pengalaman" class="pengalaman">
-            <div>
-                <h1>PENGALAMAN MENULIS</h1>
+    </section>
 
-                <div class="box">
-                    <div class="col-4">
-                        <div class="logo"><img src="image/novel_Kambing_Jantan.jpg" alt="novel_Kambing_Jantanwidth="
-                                160px">
-                            <h3>Novel Kambing Jantan</h3>
-                            <h4>2005</h4>
+
+    <section id="pengalaman">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h1 style="text-align: center;" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                    data-aos-duration="1000">PENGALAMAN</h1>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                        <div class="card shadow-sm">
+                            <a class="img-galeri-link"
+                                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                                data-lightbox="example-set"
+                                data-title="Click the right half of the image to move forward."><img
+                                    style="width: 100%; height: 225;"
+                                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
+                                    alt="" /></a>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="logo"><img src="image/novel_Cinta_Brontosaurus.jpg" alt="novel_Cinta_Brontosaurus"
-                                width="160px">
-                            <h3>Novel Cinta Brontosaurus</h3>
-                            <h4>2006</h4>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="logo"><img src="image/novel_Radikus_Makankakus.jpg" alt="novel_Radikus_Makankakus"
-                                width="160px">
-                            <h3>Novel Radikus Makankakus</h3>
-                            <h4>2007</h4>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="logo"><img src="image/novel_Babi_Ngesot.jpeg" alt="novel_Babi_Ngesot" width="160px">
-                            <h3>Novel Babi Ngesot</h3>
-                            <br>
-                            <h4>2008</h4>
-                        </div>
-                    </div>
-                    <div class="row-4">
-                        <div class="logo"><img src="image/novel_Ubur-ubur-Lembur.jpg" alt="novel_Ubur-ubur-Lembur"
-                                width="160px">
-                            <h3>Novel Ubur-Ubur Lembur</h3>
-                            <h4>2018</h4>
-                        </div>
-                    </div>
-                    <div class="row-4">
-                        <div class="logo"><img src="image/novel_koala_kumal.jpg" alt="novel_koala_kumal" width="160px">
-                            <h3>Novel Koala Kumal</h3>
-                            <h4>2015</h4>
-                        </div>
-                    </div>
-                    <div class="row-4">
-                        <div class="logo"><img src="image/novel_manusia_salmon.jpg" alt="novel_manusia_salmon"
-                                width="160px">
-                            <h3>Novel Setengah Salmon</h3>
-                            <h4>2011</h4>
-                        </div>
-                    </div>
-                    <div class="row-4">
-                        <div class="logo"><img src="image/novel_Marmut_Merah_Jambu.jpg" alt="novel_Marmut_Merah_Jambu"
-                                width="160px">
-                            <h3>Novel Marmut Merah Jambu</h3>
-                            <h4>2010</h4>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+
+                            </div>
                         </div>
                     </div>
 
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-    </section>
-
-    </div>
-    <section class="sampul" id="galeri">
-        <h3>Video</h3>
-        <div>
-            <a class="img-galeri" href="https://www.youtube.com/watch?v=jEhAKDCqFqI" data-lightbox="example-1"><img
-                    class="img-galeri" src="https://i.ytimg.com/vi/jEhAKDCqFqI/maxresdefault.jpg" alt="image-1" /></a>
-            <a class="img-galeri" href="https://www.youtube.com/watch?v=jEhAKDCqFqI" data-lightbox="example-1"><img
-                    class="img-galeri" src="https://i.ytimg.com/vi/jEhAKDCqFqI/maxresdefault.jpg" alt="image-1" /></a>
-        </div>
-
-        <hr />
-
-        <h3>Gambar</h3>
-        <div>
-            <a class="img-galeri-link"
-                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
-                    class="img-galeri"
-                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                    alt="" /></a>
-            <a class="img-galeri-link"
-                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
-                    class="img-galeri"
-                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                    alt="" /></a>
-            <a class="img-galeri-link"
-                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
-                    class="img-galeri"
-                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                    alt="" /></a>
-            <a class="img-galeri-link"
-                href="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
-                    class="img-galeri"
-                    src="https://cdn-image.hipwee.com/wp-content/uploads/2016/07/hipwee-maxresdefault-18-750x422.jpg"
-                    alt="" /></a>
         </div>
     </section>
+    <section id="galeri">
+        <h1 style="text-align: center;">GALERI</h1>
+        <div>
+            <a class="img-galeri-link"
+                href="https://awsimages.detik.net.id/community/media/visual/2019/09/23/67b092d2-8cd9-43b1-85e4-1687de687604_43.png?w=700&q=90"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://awsimages.detik.net.id/community/media/visual/2019/09/23/67b092d2-8cd9-43b1-85e4-1687de687604_43.png?w=700&q=90"
+                    alt="" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" /></a>
+            <a class="img-galeri-link"
+                href="https://asset.kompas.com/crops/eyYRZeqMvgQH7yDEe6PM4Z9goSg=/215x147:787x529/750x500/data/photo/2020/04/28/5ea804ad58d95.png"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://asset.kompas.com/crops/eyYRZeqMvgQH7yDEe6PM4Z9goSg=/215x147:787x529/750x500/data/photo/2020/04/28/5ea804ad58d95.png"
+                    alt="" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" /></a>
+            <a class="img-galeri-link"
+                href="https://awsimages.detik.net.id/community/media/visual/2018/04/24/ddeba4f2-5180-4531-b8a9-738a93f6aea5_43.jpeg?w=700&q=90"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://awsimages.detik.net.id/community/media/visual/2018/04/24/ddeba4f2-5180-4531-b8a9-738a93f6aea5_43.jpeg?w=700&q=90"
+                    alt="" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" /></a>
+            <a class="img-galeri-link"
+                href="https://media.matamata.com/thumbs/2020/09/09/18216-raditya-dika-instagramatraditya-dika/745x489-img-18216-raditya-dika-instagramatraditya-dika.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://media.matamata.com/thumbs/2020/09/09/18216-raditya-dika-instagramatraditya-dika/745x489-img-18216-raditya-dika-instagramatraditya-dika.jpg"
+                    alt="" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" /></a>
+            <a class="img-galeri-link"
+                href="https://cdn-asset.jawapos.com/wp-content/uploads/2020/10/Raditya-Dika-Instagram.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://cdn-asset.jawapos.com/wp-content/uploads/2020/10/Raditya-Dika-Instagram.jpg" alt=""
+                    data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" /></a>
+            <a class="img-galeri-link" href="https://i.ytimg.com/vi/XVuJ1XTPEAA/maxresdefault.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri" src="https://i.ytimg.com/vi/XVuJ1XTPEAA/maxresdefault.jpg" alt=""
+                    data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" /></a>
+            <a class="img-galeri-link"
+                href="https://cdn-brilio-net.akamaized.net/news/2017/12/12/136111/714614-transfromasi-raditya-dika-1-10.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://cdn-brilio-net.akamaized.net/news/2017/12/12/136111/714614-transfromasi-raditya-dika-1-10.jpg"
+                    alt="" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" /></a>
+            <a class="img-galeri-link"
+                href="https://yt3.ggpht.com/ytc/AAUvwniUUiEAEPSnCepOEj8mQIok7Ah0KmxxS60kEFyNEA=s900-c-k-c0x00ffffff-no-rj"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri"
+                    src="https://yt3.ggpht.com/ytc/AAUvwniUUiEAEPSnCepOEj8mQIok7Ah0KmxxS60kEFyNEA=s900-c-k-c0x00ffffff-no-rj"
+                    alt="" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" /></a>
+            <a class="img-galeri-link" href="https://cdn.medcom.id/images/content/2019/08/07/1050811/PlnEuGidCJ.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="img-galeri" src="https://cdn.medcom.id/images/content/2019/08/07/1050811/PlnEuGidCJ.jpg"
+                    alt="" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" /></a>
 
+        </div>
+    </section>
+    <section id="video">
+        <h1 style="text-align: center;">VIDEO</h1>
+        <div class="vid-galeri">
+            <iframe width="420" height="250" src="https://www.youtube.com/embed/hIX5gJWyjgU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="1000"></iframe>
+            <iframe width="420" height="250" src="https://www.youtube.com/embed/jEhAKDCqFqI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="1500"></iframe>
+            <iframe width="420" height="250" src="https://www.youtube.com/embed/qonMgEaU0ZQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="2000"></iframe>
+            <iframe width="420" height="250" src="https://www.youtube.com/embed/IP-mlwITkjo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="1000"></iframe>
+            <iframe width="420" height="250" src="https://www.youtube.com/embed/TrNTxhTWtaI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="1500"></iframe>
+            <iframe width="420" height="250" src="https://www.youtube.com/embed/MmwWjxEspUc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="2000"></iframe>
+        </div>
+    </section>
+    <section id="kontak" class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+        data-aos-duration="500">
+        <div class="custom-shape-divider-top-1621189909">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="konten">
+            <h2>Contact</h2>
+            <p>Kontak yang dapat dihubungi, untuk dapat mengenal lebih dekat dengan Raditya Dika,
+                dapat melalui platform berikut...
+            </p>
+        </div>
+        <div class="kontainer">
+            <div class="contactInfo">
+                <div class="kotak">
+                    <div class="simbol"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Instagram</h3>
+                        <p>@radityadika</p>
+                    </div>
+                </div>
+                <div class="kotak">
+                    <div class="simbol"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Youtube</h3>
+                        <p>Raditya Dika</p>
+                    </div>
+                </div>
+                <div class="kotak">
+                    <div class="simbol"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Management</h3>
+                        <p>management@radityadika.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section class="team-section">
+        <div class="container">
+            <div class="team-row">
+                <div class="section-title">
+                    <h1>Our Team</h1>
+                </div>
+            </div>
+            <div class="team-row">
+                <div class="team-items">
+                    <div class="item">
+                        <img src="image/wiweka.jpg" alt="team" />
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Komang Wiweka Premana</h5>
+                                <p>1915091026</p>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/wiweka.premanaa/"><span class="fa fa-facebook"></span></a>
+                                    <a href="https://twitter.com/Wiweka19"><span class="fa fa-twitter"></span></a>
+                                    <a href="https://www.instagram.com/wiwekapremana/"><span class="fa fa-instagram"></span></a>
+                                    <a href="https://www.youtube.com/channel/UCR7VGM6MUkRZBqZrls9xNnQ"><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="image/wiweka.jpg" alt="team" />
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Komang Wiweka Premana</h5>
+                                <p>1915091026</p>
+                                <div class="social-links">
+                                    <a href=""><span class="fa fa-facebook"></span></a>
+                                    <a href=""><span class="fa fa-twitter"></span></a>
+                                    <a href=""><span class="fa fa-instagram"></span></a>
+                                    <a href=""><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="image/wiweka.jpg" alt="team" />
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Komang Wiweka Premana</h5>
+                                <p>1915091026</p>
+                                <div class="social-links">
+                                    <a href=""><span class="fa fa-facebook"></span></a>
+                                    <a href=""><span class="fa fa-twitter"></span></a>
+                                    <a href=""><span class="fa fa-instagram"></span></a>
+                                    <a href=""><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="image/wiweka.jpg" alt="team" />
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Komang Wiweka Premana</h5>
+                                <p>1915091026</p>
+                                <div class="social-links">
+                                    <a href=""><span class="fa fa-facebook"></span></a>
+                                    <a href=""><span class="fa fa-twitter"></span></a>
+                                    <a href=""><span class="fa fa-instagram"></span></a>
+                                    <a href=""><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
-        <div class="sosmed">
+        <div>
             <div align="center">
-                <ul>
-                    <li><a class="icon" href="https://www.facebook.com/wiweka.premanaa/" target="_blank"><img
-                                src="image/Facebook.png" alt="Facebook" width="40px "></a></li>
-                    <li><a class="icon" href="https://www.instagram.com/wiwekapremana/" target="_blank"><img
-                                src="image/Instagram.png" alt="Instagram" width="40px"></a></li>
-                    <li><a class="icon" href="https://twitter.com/Wiweka19" target="_blank"><img src="image/Twitter.png"
-                                alt="Twitter" width="40px"></a></li>
-                </ul>
+                <h6>Copyright © Kelompok 2--SI 4A.</h6>
             </div>
-        </div>
 
     </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () { var header = document.querySelector("header"); header.classList.toggle("sticky", window.scrollY > 0) })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

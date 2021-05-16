@@ -4,14 +4,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
-a {
-    color: inherit;
-    text-decoration: none;
-}
-.home{
-    height: 100vh;
-    background-color: blue;
-}
+/* ==== HEADER ===== */
 header {
     position: fixed;
     top: 0;
@@ -30,62 +23,7 @@ header.sticky {
 header.sticky ul li a{
     color: white;
     transition: 0.6;
-}
-.active {
-    background-color: white;
-    color: black;
-}
-.sampul{
-    height: 110vh;
-    background: rgb(2, 192, 169);
-    background: linear-gradient(130deg, rgba(2,192,169,1) 10%, rgba(33,137,166,1)100%);
-    background-size: cover;
-    position: relative;
-}
-.sampul2{
-    height: 100vh;
-    background-image: url('../image/raditya\ dika3.png');
-    background-size: cover;
-    display: flex;
-}
-
-.quotes h1{
-    font-size: 30px;
-    color:rgb(2, 192, 169); 
-    width: 600px;
-    font-style: italic;
-    margin-top: 40vh;
-    margin-left: 120px;
-}
-.content{
-    display: flex;
-    
-}
-.foto img{
-    margin-top: 92px;
-    width: 500px;
-}
-
-#foto {
-    margin-left: 10px;
-    width: 900px;
-}
-.quotes{
-    display: flex;
-}
-.paragraf{
-    width: 500px;
-    height: 700px;
-    font-style: normal;
-    text-align: justify;
-}
-.nama{
-    margin-top: 200px;
-    margin-left: 200px;
-    color: white;
-}
-.nama h1{
-    font-size: 50px;
+    text-decoration: none;
 }
 header ul {
     float: right;
@@ -98,89 +36,361 @@ header ul li {
 header ul li a {
     padding: 25px 20px;
     display: inline-block;
+    text-decoration: none;
+    color: white;
 }
 header ul li a:hover {
     background-color: #008E97;
     color: white;
 }
-.banner2 {
-    margin-top: 25px;
-    height: 120vh;
-    background-image: url('../image/beranda.gif');
+.active {
+    background-color: white;
+    color: black;
+}
+/* ==== CSS TAMPILAN AWAL & BIODATA ==== */
+.sampul{
+    height: 100vh;
+    background-color: white;
     background-size: cover;
     position: relative;
+}
+.sampulawal img{
+    height: 60%;
+}
+.sampulawal{
+    height: 100vh;
+    background: rgb(2, 192, 169);
+    background: linear-gradient(130deg, rgba(2,192,169,1) 10%, rgba(33,137,166,1)100%);
+    background-size: cover;
+    display: flex;
+}
+.sampulbiodata{
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+
+.content{
+    display: flex;
+    
+}
+.foto img{
+    margin-top: 85px;
+    width: 100%;
+}
+.content .fotobio{
+    margin-top: 12%;
+    margin-left: 180px;
+}
+.quotes{
+    display: flex;
+}
+.paragraf{
+    width: 500px;
+    height: 700px;
+    font-style: normal;
+    text-align: justify;
+}
+.nama{
+    margin-top: 10%;
+    margin-left: 50px;
+    color: black;
+}
+.nama h1{
+    font-size: 50px;
+}
+/* ===== CSS GALERI & VIDEO ===== */
+.img-galeri {
+    width: 65vh;
+    height: 45vh;
+    margin: 5px;
+    padding: 30px;
+}
+.vid-galeri {
+    margin: 10px;
+    padding: 20px;
+}
+.container{
+    margin-top: 10%;
+}
+/* ==== CSS KONTAK ===== */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
     display: flex;
     justify-content: center;
-    align-items:flex-start;
-}
-footer {
-    background-color: #15162B ;
-    size: 10px;
-    color: white;
-    margin-top: 25px;
-}
-.sosmed {
-    margin: 20px auto;
-    padding: 5px 0;
-    margin: 0 auto;
     align-items: center;
+    flex-direction: column;
+    background: #009688;
+    background-size: cover;
 }
-.sosmed ul li {
-    display: inline-block;
-    margin-right: 5px;
-    margin-top: 5px;
-}
-.icon {
+
+.contact .konten {
+    max-width: 800px;
     text-align: center;
-    padding: 10px;
 }
-.box {
-    /* border: 1px solid; */
+
+.contact .konten h2 {
+    font-size: 36px;
+    font-weight: 500;
     color: #fff;
 }
-.box:after {
-    content: '';
-    display: block;
+
+.contact .konten p {
+    font-weight: 300;
+    color: #fff;
 }
-.box .col-4 {
-    width: 25%;
-    padding: 20px;
-    box-sizing: border-box;
-    /* border: 1px solid; */
-    text-align: center;
-    float: left;
-    -webkit-transition: 0.9s ease;
-    transition: 1.5s ease;
-}
-.box .col-3 {
-    width: 33%;
-    padding: 50px;
-    box-sizing: border-box;
-    /* border: 1px solid; */
-    text-align: center;
-    float: left;
-    -webkit-transition: 0.9s ease;
-    transition: 1.5s ease;
-}
-.pengalaman{
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
+
+.kontainer {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
-.box .row-4 {
-    width: 25%;
-    padding: 20px;
-    box-sizing: border-box;
-    /* border: 1px solid; */
-    text-align: center;
-    float: right;
-    -webkit-transition: 0.9s ease;
-    transition: 1.5s ease;
+.kontainer .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-.img-galeri {
-    height: 10vh;
+.kontainer .contactInfo .kotak {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.kontainer .contactInfo .kotak .simbol {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.kontainer .contactInfo .kotak .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.kontainer .contactInfo .kotak .text h3 {
+    font-weight: 500;
+    color:  #00bcd4;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+  /* ==== CSS Team Section ==== */
+  .team-section{
+	background-color:#009688;
+	min-height: 100vh;
+	padding:70px 15px 30px;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.team-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team-section .section-title{
+	flex-basis: 100%;
+	max-width: 100%;
+	margin-bottom: 70px;
+}
+
+.team-section .section-title h1{
+	font-size: 40px;
+	text-align: center;
+	margin:0;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.team-section .section-title p{
+	font-size:16px;
+	text-align: center;
+	margin:15px 0 0;
+	color:#ffffff;
+}
+.team-section .team-items{
+	
+	flex-basis: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.team-section .team-items .item{
+ flex-basis: calc(25% - 30px);
+ max-width: calc(25% - 30px);
+ transition: all .5s ease;
+ margin-bottom: 40px;
+}
+.team-section .team-items .item img{
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.team-section .team-items .item .inner{
+	position: relative;
+	z-index: 11;
+	padding:0 15px;
+}
+.team-section .team-items .item .inner .info{
+	background-color:#009688;
+	text-align: center;
+	padding: 20px 15px;
+	border-radius:8px;
+	transition: all .5s ease;
+	margin-top: -40px;
+}
+.team-section .team-items .item:hover  .info{
+    transform: translateY(-20px);
+}
+.team-section .team-items .item:hover{
+ transform: translateY(-10px);	
+}
+.team-section .team-items .item .inner .info h5{
+	margin:0;
+	font-size: 18px;
+	font-weight: 600;
+	color:#ffffff;
+}
+.team-section .team-items .item .inner .info p{
+	font-size: 16px;
+	font-weight: 400;
+	color:#c5c5c5;
+	margin:10px 0 0;
+}
+
+.team-section .team-items .item .inner .info .social-links{
+	padding-top: 15px;
+}
+
+.team-section .team-items .item .inner .info .social-links a{
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	background-color: #ffffff;
+	color:#009688;
+	border-radius: 50%;
+	margin:0 2px;
+	text-align: center;
+	line-height: 32px;
+	font-size:16px;
+	transition: all .5s ease;
+}
+
+.team-section .team-items .item .inner .info .social-links a:hover{
+	box-shadow: 0 0 10px #000;
+}
+
+/*responsive*/
+@media(max-width: 991px){
+	.team-section .team-items .item{
+      flex-basis: calc(50% - 30px);
+       max-width: calc(50% - 30px);
+
+   }
+}
+
+@media(max-width: 767px){
+	.team-section .team-items .item{
+      flex-basis: calc(100%);
+       max-width: calc(100%);
+
+   }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+/* ==== Footer ==== */
+footer {
+    height: 5vh;
 }
