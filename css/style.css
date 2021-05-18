@@ -4,29 +4,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
-.batas {
-    height: 10vh;
-    background-color: #00bcd4;
-}
-.custom-shape-divider-top-1621343289 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
 
-.custom-shape-divider-top-1621343289 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 124px;
-}
-
-.custom-shape-divider-top-1621343289 .shape-fill {
-    fill: #FFFFFF;
-}
 /* ==== HEADER ==================================================================== */
 header {
     position: fixed;
@@ -78,36 +56,23 @@ header ul li a:hover {
     background-size: cover;
     position: relative;
 }
-.sampulawal img{
-    height: 60%;
-}
 .sampulawal{
-    height: 100vh;
+    height: 96vh;
     background: rgb(2, 192, 169);
     background: linear-gradient(130deg, rgba(2,192,169,1) 10%, rgba(33,137,166,1)100%);
     background-size: cover;
     display: flex;
 }
-.sampulbiodata{
-    height: 100vh;
-    background-size: cover;
-    display: flex;
+.quotes img{
+    width: 80vh;
 }
 
 .content{
     display: flex;
-    
-}
-.foto img{
-    margin-top: 85px;
-    width: 100%;
 }
 .content .fotobio{
     margin-top: 12%;
     margin-left: 180px;
-}
-.quotes{
-    display: flex;
 }
 .paragraf{
     width: 500px;
