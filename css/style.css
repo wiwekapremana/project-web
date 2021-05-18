@@ -4,7 +4,30 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
-/* ==== HEADER ===== */
+.batas {
+    height: 10vh;
+    background-color: #00bcd4;
+}
+.custom-shape-divider-top-1621343289 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1621343289 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 124px;
+}
+
+.custom-shape-divider-top-1621343289 .shape-fill {
+    fill: #FFFFFF;
+}
+/* ==== HEADER ==================================================================== */
 header {
     position: fixed;
     top: 0;
@@ -19,6 +42,7 @@ header {
 header.sticky {
     background-color: rgba(80, 74, 74, 0.4);
     display: inline-block;
+    height: 11vh;
 }
 header.sticky ul li a{
     color: white;
@@ -47,7 +71,7 @@ header ul li a:hover {
     background-color: white;
     color: black;
 }
-/* ==== CSS TAMPILAN AWAL & BIODATA ==== */
+/* ==== CSS TAMPILAN AWAL & BIODATA =================================================== */
 .sampul{
     height: 100vh;
     background-color: white;
@@ -99,11 +123,15 @@ header ul li a:hover {
 .nama h1{
     font-size: 50px;
 }
-/* ===== CSS GALERI & VIDEO ===== */
+/* ===== CSS PENGALAMAN ====================================================== */
+.card-text {
+    text-align: justify;
+}
+
+/* ===== CSS GALERI & VIDEO ==================================================== */
 .img-galeri {
     width: 65vh;
     height: 45vh;
-    margin: 5px;
     padding: 30px;
 }
 .vid-galeri {
@@ -256,7 +284,7 @@ header ul li a:hover {
 }
 
 
-  /* ==== CSS Team Section ==== */
+  /* ==== CSS Team Section ===================================================================== */
   .team-section{
 	background-color:#009688;
 	min-height: 100vh;
@@ -367,30 +395,8 @@ header ul li a:hover {
 	box-shadow: 0 0 10px #000;
 }
 
-/*responsive*/
-@media(max-width: 991px){
-	.team-section .team-items .item{
-      flex-basis: calc(50% - 30px);
-       max-width: calc(50% - 30px);
 
-   }
-}
-
-@media(max-width: 767px){
-	.team-section .team-items .item{
-      flex-basis: calc(100%);
-       max-width: calc(100%);
-
-   }
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-
-/* ==== Footer ==== */
+/* ==== Footer =============================================================================== */
 footer {
     height: 5vh;
 }
