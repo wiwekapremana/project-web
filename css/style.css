@@ -4,13 +4,16 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
-
+.icon-roket {
+    position: fixed;
+    width: 50px;
+}
 /* ==== HEADER ==================================================================== */
 header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 99%;
     display: inline-block;
     justify-content: space-between;
     align-items: center;
@@ -55,35 +58,43 @@ header ul li a:hover {
     background-color: white;
     background-size: cover;
     position: relative;
+
 }
+
 .sampulawal{
     height: 96vh;
     background: rgb(2, 192, 169);
     background: linear-gradient(130deg, rgba(2,192,169,1) 10%, rgba(33,137,166,1)100%);
     background-size: cover;
-    display: flex;
+    display: table;
 }
 .quotes img{
     width: 80vh;
 }
 
 .content{
+    content: "";
+    clear: both;
     display: flex;
 }
 .content .fotobio{
     margin-top: 12%;
     margin-left: 180px;
+    width: auto;
+    height: auto;
 }
 .paragraf{
-    width: 500px;
-    height: 700px;
+    /* width: 500px;
+    height: 700px; */
     font-style: normal;
     text-align: justify;
 }
 .nama{
     margin-top: 10%;
-    margin-left: 50px;
+    margin-left: 5%;
     color: black;
+    width: auto;
+    height: auto;
 }
 .nama h1{
     font-size: 50px;
